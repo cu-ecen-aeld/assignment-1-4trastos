@@ -2,7 +2,7 @@
 
 # Validar argumentos
 if [ $# -ne 2 ]; then
-    echo "Error: Se requieren exactamente 2 argumentos."
+    echo "Error: Exactly 2 arguments are required."
     echo "Uso: $0 <filesdir> <searchstr>"
     exit 1
 fi
@@ -12,7 +12,7 @@ searchstr="$2"
 
 # Validar si filesdir es un directorio
 if [ ! -d "$filesdir" ]; then
-    echo "Error: $filesdir no es un directorio válido."
+    echo "Error: $filesdir is not a valid directory."
     exit 1
 fi
 

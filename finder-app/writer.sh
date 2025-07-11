@@ -2,7 +2,7 @@
 
 # Validar argumentos
 if [ $# -ne 2 ]; then
-    echo "Error: Se requieren exactamente 2 argumentos."
+    echo "Error: Exactly 2 arguments are required."
     echo "Uso: $0 <writefile> <writestr>"
     exit 1
 fi
@@ -18,7 +18,7 @@ echo "$writestr" > "$writefile"
 
 # Validar que el archivo se creó
 if [ ! -f "$writefile" ]; then
-    echo "Error: No se pudo crear el archivo $writefile."
+    echo "Error: The file could not be created $writefile."
     exit 1
 fi
 
