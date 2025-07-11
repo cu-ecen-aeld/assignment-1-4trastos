@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Validar argumentos
+# Validate arguments
 if [ $# -ne 2 ]; then
     echo "Error: Exactly 2 arguments are required."
     echo "Uso: $0 <filesdir> <searchstr>"
